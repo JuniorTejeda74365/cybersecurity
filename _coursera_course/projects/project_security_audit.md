@@ -3,7 +3,6 @@
 # Botium Toys Internal Security Audit Report
 1. Executive Summary
 
-
 Botium Toys is a growing U.S.-based toy company with a physical storefront, warehouse, and expanding online presence. Due to increased customer data processing and international sales, the IT manager requested an internal security audit to assess risks, controls, and compliance with major regulations.
 
 The current audit identifies critical issues including lack of encryption, no backups, missing least-privilege access controls, weak password requirements, and several compliance gaps. Overall risk score: 8/10 (High).
@@ -99,7 +98,9 @@ Weak password policy
 No password management system
 
 6. Controls Assessment Checklist
+
 Control	In Place?
+
 Least Privilege	No
 
 Separation of Duties  No
