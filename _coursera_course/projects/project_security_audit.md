@@ -28,7 +28,9 @@ Assess PCI DSS, GDPR, and SOC 1/2 compliance
 Identify risks, gaps, and recommend improvements
 
 4. Asset Inventory
+
 4.1 Hardware Assets
+
 Office desktops/laptops
 Smartphones
 Remote workstations
@@ -39,6 +41,7 @@ Warehouse/storefront equipment
 Legacy systems (end-of-life equipment requiring monitoring)
 
 4.2 Software & Systems
+
 Accounting systems
 Telecommunication systems
 Inventory management
@@ -47,11 +50,13 @@ Security software
 Databases
 
 4.3 Network Assets
+
 Internal network
 Internet access
 Firewalls
 
 4.4 Data Assets
+
 Customer PII/SPII
 Credit card data
 Employee data
@@ -62,15 +67,19 @@ Ecommerce transactions
 5. Risk Assessment
 
 5.1 Risk Description
+
 Botium Toys lacks adequate asset management and several required controls. Compliance with regulatory standards is incomplete, creating legal, financial, and operational risks.
 
 5.2 Risk Score
+
 8 out of 10 — High risk.
 
-5.3 Impact Level
+5.3 Impact Level:
+
 Medium impact on operations, high risk for fines and data exposure.
 
-5.4 Key Risk Findings
+5.4 Key Risk Findings:
+
 All employees can access PII and cardholder data
 
 No encryption for credit card data
@@ -120,7 +129,9 @@ CCTV	Yes
 Fire Detection/Prevention	Yes
 
 7. Compliance Checklist
+
 7.1 PCI DSS
+
 Best Practice	In Place?
 
 Only authorized users access credit card info	No
@@ -132,6 +143,7 @@ Encryption implemented for card data	No
 Secure password management	No
 
 7.2 GDPR
+
 Best Practice	In Place?
 
 E.U. customer data kept private/secure	No
@@ -144,6 +156,7 @@ Privacy policies enforced	Yes
 
 
 7.3 SOC 1 / SOC 2
+
 Best Practice	In Place?
 
 User access policies established    No
@@ -156,6 +169,7 @@ Data availability controls	Yes
 
 
 8. Gap Analysis
+
 Category	Gap Identified	Impact	Priority
 
 Access Control	No least privilege	High risk of unauthorized access	High
@@ -178,7 +192,9 @@ Asset Management	No classification/inventory	Unknown risks	Medium
 
 Legacy Systems	No schedule for monitoring	Unexpected failures	Medium
 
+
 9. Recommendations
+
 Critical Priority
 
 Implement encryption on all card data
