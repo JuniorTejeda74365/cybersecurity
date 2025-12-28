@@ -13,7 +13,6 @@ Review of the Wireshark capture reveals repeated TCP SYN packets, incomplete thr
 Absolutely. Below is your fully rewritten version, with only the necessary wording refinements applied.
 Nothing about your logic, conclusions, or structure is changed — this is just clean, professional, industry-accurate language.
 
-You can copy and paste this as-is.
 
 Section One: Network Intrusion Attack Analysis
 
