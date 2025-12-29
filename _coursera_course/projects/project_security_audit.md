@@ -1,238 +1,212 @@
-# Overview:
-
 # Botium Toys Internal Security Audit Report
-1. Executive Summary
 
-Botium Toys is a growing U.S.-based toy company with a physical storefront, warehouse, and expanding online presence. Due to increased customer data processing and international sales, the IT manager requested an internal security audit to assess risks, controls, and compliance with major regulations.
+---
 
-The current audit identifies critical issues including lack of encryption, no backups, missing least-privilege access controls, weak password requirements, and several compliance gaps. Overall risk score: 8/10 (High).
+## Executive Summary
 
-2. Scope of the Audit
+Botium Toys is a growing U.S.-based toy company with a physical storefront, warehouse, and expanding online presence. Due to increased customer data processing and international sales, the IT manager requested an internal security audit to assess organizational risks, security controls, and regulatory compliance.
 
-The scope includes the entire security program at Botium Toys:
-Employee devices
-Internal network
-Systems and software
-Data handling and storage
-Physical security
-Legacy systems
-Online payment processing
-Compliance with U.S. and E.U. regulations
+This audit identified several critical security weaknesses, including a lack of encryption, absence of data backups, missing least-privilege access controls, weak password requirements, and multiple compliance gaps. Based on these findings, the overall risk score for Botium Toys is **8/10 (High)**.
 
-3. Audit Goals
+---
 
-Identify and classify existing assets
-Evaluate current administrative, technical, and physical controls
-Assess PCI DSS, GDPR, and SOC 1/2 compliance
-Identify risks, gaps, and recommend improvements
+## Scope of the Audit
 
-4. Asset Inventory
+The scope of this audit includes the organization’s entire security program, covering:
 
-4.1 Hardware Assets
+* Employee devices
+* Internal network infrastructure
+* Systems and software
+* Data handling and storage practices
+* Physical security controls
+* Legacy systems
+* Online payment processing
+* Compliance with U.S. and E.U. regulations
 
-Office desktops/laptops
-Smartphones
-Remote workstations
-Keyboards, mice, docking stations
-Headsets
-Surveillance cameras
-Warehouse/storefront equipment
-Legacy systems (end-of-life equipment requiring monitoring)
+---
 
-4.2 Software & Systems
+## Audit Goals
 
-Accounting systems
-Telecommunication systems
-Inventory management
-Ecommerce platform
-Security software
-Databases
+The objectives of this audit were to:
 
-4.3 Network Assets
+* Identify and classify existing assets
+* Evaluate current administrative, technical, and physical controls
+* Assess compliance with PCI DSS, GDPR, and SOC 1/2 standards
+* Identify security risks and gaps
+* Recommend improvements to strengthen the security posture
 
-Internal network
-Internet access
-Firewalls
+---
 
-4.4 Data Assets
+## Asset Inventory
 
-Customer PII/SPII
-Credit card data
-Employee data
-Internal business data
-Inventory data
-Ecommerce transactions
+### Hardware Assets
 
-5. Risk Assessment
+* Office desktops and laptops
+* Smartphones
+* Remote workstations
+* Keyboards, mice, and docking stations
+* Headsets
+* Surveillance cameras
+* Warehouse and storefront equipment
+* Legacy systems (end-of-life equipment requiring monitoring)
 
-5.1 Risk Description
+### Software & Systems
 
-Botium Toys lacks adequate asset management and several required controls. Compliance with regulatory standards is incomplete, creating legal, financial, and operational risks.
+* Accounting systems
+* Telecommunication systems
+* Inventory management systems
+* Ecommerce platform
+* Security software
+* Databases
 
-5.2 Risk Score
+### Network Assets
 
-8 out of 10 — High risk.
+* Internal network
+* Internet access infrastructure
+* Firewalls
 
-5.3 Impact Level:
+### Data Assets
 
-Medium impact on operations, high risk for fines and data exposure.
+* Customer PII/SPII
+* Credit card data
+* Employee data
+* Internal business data
+* Inventory data
+* Ecommerce transaction data
 
-5.4 Key Risk Findings:
+---
 
-All employees can access PII and cardholder data
+## Risk Assessment
 
-No encryption for credit card data
+### Risk Description
 
-No least privilege or separation of duties
+Botium Toys lacks adequate asset management and several required security controls. Compliance with regulatory standards is incomplete, creating increased legal, financial, and operational risks.
 
-No IDS (Intrusion Detection System)
+### Risk Score
 
-No backups
+**8 out of 10 — High Risk**
 
-No disaster recovery plan
+### Impact Level
 
-Legacy systems unscheduled maintenance
+* Medium impact on day-to-day operations
+* High risk of regulatory fines and sensitive data exposure
 
-Weak password policy
+### Key Risk Findings
 
-No password management system
+* All employees can access PII and cardholder data
+* No encryption implemented for credit card data
+* No least-privilege access or separation of duties
+* No intrusion detection system (IDS)
+* No data backups
+* No disaster recovery plan
+* Legacy systems lack scheduled maintenance
+* Weak password policy
+* No password management system
+
+---
+
+## Controls Assessment Checklist
 
-6. Controls Assessment Checklist
+| Control                          | In Place            |
+| -------------------------------- | ------------------- |
+| Least Privilege                  | No                  |
+| Separation of Duties             | No                  |
+| Password Policies                | Yes (weak)          |
+| Password Management System       | No                  |
+| Firewall                         | Yes                 |
+| Intrusion Detection System (IDS) | No                  |
+| Antivirus Software               | Yes                 |
+| Backups                          | No                  |
+| Disaster Recovery Plan           | No                  |
+| Manual Legacy System Maintenance | Yes (not scheduled) |
+| Encryption                       | No                  |
+| Physical Locks                   | Yes                 |
+| CCTV                             | Yes                 |
+| Fire Detection / Prevention      | Yes                 |
 
-Control	In Place?
+---
 
-Least Privilege	No
+## Compliance Assessment
 
-Separation of Duties  No
+### PCI DSS
 
-Password Policies  Yes (weak)
+| Best Practice                              | In Place |
+| ------------------------------------------ | -------- |
+| Authorized access to cardholder data only  | No       |
+| Secure storage and processing of card data | No       |
+| Encryption of card data                    | No       |
+| Secure password management                 | No       |
 
-Password Management System  No
+### GDPR
 
-Firewall  Yes
+| Best Practice                              | In Place |
+| ------------------------------------------ | -------- |
+| E.U. customer data kept private and secure | No       |
+| 72-hour breach notification plan           | Yes      |
+| Data classified and inventoried            | No       |
+| Privacy policies enforced                  | Yes      |
 
-IDS (Intrusion Detection System)  No
+### SOC 1 / SOC 2
 
-Antivirus Softwar  Yes
+| Best Practice                    | In Place |
+| -------------------------------- | -------- |
+| User access policies established | No       |
+| PII/SPII kept confidential       | No       |
+| Data integrity controls          | Yes      |
+| Data availability controls       | Yes      |
 
-Backups	No
+---
 
-Disaster Recovery Plans	No
+## Gap Analysis
 
-Manual Legacy System Maintenance  Yes (not scheduled)
+| Category            | Gap Identified            | Impact              | Priority |
+| ------------------- | ------------------------- | ------------------- | -------- |
+| Access Control      | No least privilege        | Unauthorized access | High     |
+| Access Control      | No separation of duties   | Fraud risk          | High     |
+| Encryption          | Card data unencrypted     | PCI violation       | Critical |
+| Monitoring          | No IDS                    | Undetected attacks  | High     |
+| Business Continuity | No backups                | Data loss           | Critical |
+| Business Continuity | No disaster recovery plan | Extended downtime   | Critical |
+| Identity Management | Weak passwords            | Account compromise  | High     |
+| Identity Management | No password manager       | Password reuse      | Medium   |
+| Asset Management    | No asset classification   | Unknown risks       | Medium   |
+| Legacy Systems      | No maintenance schedule   | System failures     | Medium   |
 
-Encryption	No
+---
 
-Locks	Yes
+## Recommendations
 
-CCTV	Yes
+### Critical Priority
 
-Fire Detection/Prevention	Yes
+* Implement encryption for all cardholder data
+* Build daily automated backups
+* Establish a full disaster recovery plan
+* Deploy an intrusion detection system (IDS)
 
-7. Compliance Checklist
+### High Priority
 
-7.1 PCI DSS
+* Implement least-privilege access controls
+* Establish separation of duties
+* Strengthen password policies
+* Introduce centralized password management
+* Classify and inventory all assets
+* Implement role-based access control (RBAC)
 
-Best Practice	In Place?
+### Medium Priority
 
-Only authorized users access credit card info	No
+* Schedule regular maintenance for legacy systems
+* Improve secure data handling processes
 
-Credit card data stored/processed securely	No
+### Low Priority
 
-Encryption implemented for card data	No
+* Continue maintaining physical security controls (locks, CCTV, fire detection)
 
-Secure password management	No
+---
 
-7.2 GDPR
+## Conclusion
 
-Best Practice	In Place?
+Botium Toys faces significant security risks due to missing technical and administrative controls and incomplete regulatory compliance. Addressing the identified gaps—particularly encryption, backups, access controls, and monitoring—will substantially improve the organization’s security posture and reduce the likelihood of data breaches or regulatory penalties.
 
-E.U. customer data kept private/secure	No
-
-72-hour breach notification plan	Yes
-
-Data classified and inventoried	No
-
-Privacy policies enforced	Yes
-
-
-7.3 SOC 1 / SOC 2
-
-Best Practice	In Place?
-
-User access policies established    No
-
-PII/SPII kept confidential	No
-
-Data integrity controls	Yes
-
-Data availability controls	Yes
-
-
-8. Gap Analysis
-
-Category	Gap Identified	Impact	Priority
-
-Access Control	No least privilege	High risk of unauthorized access	High
-
-Access Control	No separation of duties	Fraud/abuse possible	High
-
-Encryption	Card data unencrypted  PCI violation	Critical
-
-Monitoring	No IDS	Attacks may go undetected	High
-
-Business Continuity	No backups	Data loss risk	Critical
-
-Business Continuity	No disaster recovery plan	Extended downtime	Critical
-
-Identity Management	Weak passwords Account compromise	High
-
-Identity Management	No password manager	Reuse/weak passwords	Medium
-
-Asset Management	No classification/inventory	Unknown risks	Medium
-
-Legacy Systems	No schedule for monitoring	Unexpected failures	Medium
-
-
-9. Recommendations
-
-Critical Priority
-
-Implement encryption on all card data
-
-Build daily automated backups
-
-Establish a full disaster recovery plan
-
-Deploy an IDS across the network
-
-High Priority
-
-Implement least privilege
-
-Create separation of duties
-
-Strengthen password policies
-
-Introduce centralized password management
-
-Properly classify & inventory all assets
-
-Implement role-based access control (RBAC)
-
-Medium Priority
-
-Schedule regular legacy system maintenance
-
-Improve secure data handling processes
-
-Low Priority
-Continue maintaining physical controls (locks, CCTV, fire detection)
-
-10. Conclusion
-
-Botium Toys has significant security risks due to missing technical and administrative controls and incomplete compliance with major standards. Fixing the identified gaps—especially encryption, backups, access controls, and monitoring—will greatly improve their security posture and reduce the risk of costly breaches or fines.
-
-This internal audit provides a roadmap for prioritizing improvements and aligning Botium Toys with industry standards and regulatory requirements.
+This internal audit provides a clear roadmap for prioritizing remediation efforts and aligning Botium Toys with industry best practices and regulatory requirements.
 
 
