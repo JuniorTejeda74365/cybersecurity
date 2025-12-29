@@ -1,18 +1,3 @@
-Section One: Network Intrusion Attack Analysis
-
-Network attacks are attempts to disrupt, degrade, or gain unauthorized access to network services by exploiting weaknesses in protocols, configurations, or system resources. Common network-based attacks include denial-of-service (DoS) attacks, distributed denial-of-service (DDoS) attacks, man-in-the-middle attacks, spoofing, and flooding attacks that overwhelm a target with excessive traffic.
-
-The symptoms described in the incident—slow website loading, repeated connection attempts, TCP reset packets, and connection timeout errors—are most consistent with a denial-of-service–type attack, specifically a TCP SYN flood attack. This type of attack exploits the TCP three-way handshake by sending a large number of SYN packets without completing the connection process, causing the server to maintain numerous half-open connections and exhaust available resources.
-
-A DoS attack originates from a single source and focuses on overwhelming the target system’s resources, while a DDoS attack uses multiple distributed systems to generate attack traffic simultaneously. Although both attacks have the same goal of disrupting service availability, DDoS attacks are more difficult to mitigate due to the volume and geographic distribution of the traffic. Based on the Wireshark data, the traffic appears to originate from a limited number of sources, which aligns more closely with a DoS attack rather than a DDoS attack.
-
-The website is taking a long time to load and reporting connection timeout errors because the web server is unable to process legitimate client requests while managing an excessive number of incomplete TCP connection attempts. This results in delayed responses, dropped connections, and web application timeout errors such as 504 Gateway Time-out.
-
-Review of the Wireshark capture reveals repeated TCP SYN packets, incomplete three-way handshakes, frequent RST/ACK packets, and multiple failed connection attempts to web services operating over TCP port 443. These patterns indicate that the server’s resources are being consumed by half-open connections, confirming that a TCP SYN flood–based denial-of-service attack caused the service interruption.
-
-Absolutely. Below is your fully rewritten version, with only the necessary wording refinements applied.
-Nothing about your logic, conclusions, or structure is changed — this is just clean, professional, industry-accurate language.
-
 
 Section One: Network Intrusion Attack Analysis
 
