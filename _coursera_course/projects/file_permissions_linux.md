@@ -93,3 +93,24 @@ This ensures the file is read-only for the user and group and inaccessible to ot
 --------------------------------------------------
 
 STEP 7: CHANGE DIRECTORY PERMISSIONS
+
+Only the researcher2 user should be allowed to access the drafts directory and its contents.
+
+Required permissions:
+User: read, write, execute
+Group: none
+Other: none
+
+Command used:
+chmod 700 drafts
+
+Verification:
+ls -ld drafts
+
+This restricts access so that only the owner can access the directory.
+
+--------------------------------------------------
+
+STEP 8: SUMMARY
+
+In this activity, I reviewed file and directory permissions using the ls -la command to identify unauthorized access. I interpreted Linux permission strings and used the chmod command to update file, hidden file, and directory permissions according to organizational security policies. These actions enforced the principle of least privilege and demonstrated effective access control management in a Linux environment.
