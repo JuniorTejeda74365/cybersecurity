@@ -3,7 +3,7 @@ APPLY FILTERS TO SQL QUERIES
 
 PROJECT DESCRIPTION
 -------------------
-In this project, I acted as a security professional at a large organization responsible for investigating potential security issues related to login attempts and employee machines. I examined organizational data using SQL to identify suspicious login activity and determine which employee machines required security updates. By applying SQL filters such as AND, OR, NOT, and LIKE, I retrieved relevant records to support security investigations and operational decision-making.
+In this project, I acted as a security professional at a large organization responsible for investigating potential security issues related to login attempts and employee machines. I examined organizational data using SQL to analyze authentication activity and employee information to identify suspicious behavior and determine which systems required security updates. By applying SQL filters such as AND, OR, NOT, and LIKE, I supported incident investigation and access control decision-making.
 
 
 STEP 1: SCENARIO OVERVIEW
@@ -29,6 +29,7 @@ STEP 3: RETRIEVE AFTER-HOURS FAILED LOGIN ATTEMPTS
 A potential security incident occurred after business hours. To investigate this, the log_in_attempts table was queried to identify all failed login attempts that occurred after 18:00.
 
 Command used:
+
 SELECT *
 FROM log_in_attempts
 WHERE success = 0
@@ -43,6 +44,7 @@ STEP 4: RETRIEVE LOGIN ATTEMPTS ON SPECIFIC DATES
 A suspicious event occurred on 2022-05-09. To investigate this event, login attempts from that date and the day before were reviewed.
 
 Command used:
+
 SELECT *
 FROM log_in_attempts
 WHERE login_date = '2022-05-09'
@@ -57,6 +59,7 @@ STEP 5: RETRIEVE LOGIN ATTEMPTS OUTSIDE OF MEXICO
 Suspicious login activity was determined not to originate from Mexico. Login attempts occurring outside of Mexico were investigated.
 
 Command used:
+
 SELECT *
 FROM log_in_attempts
 WHERE country NOT LIKE 'MEX%';
@@ -70,6 +73,7 @@ STEP 6: RETRIEVE EMPLOYEES IN MARKETING
 The security team needed to perform updates on employee machines in the Marketing department located in the East building.
 
 Command used:
+
 SELECT *
 FROM employees
 WHERE department LIKE '%Marketing%'
@@ -84,6 +88,7 @@ STEP 7: RETRIEVE EMPLOYEES IN FINANCE OR SALES
 A different security update was required for employees in the Finance and Sales departments.
 
 Command used:
+
 SELECT *
 FROM employees
 WHERE department LIKE '%Finance%'
@@ -98,6 +103,7 @@ STEP 8: RETRIEVE ALL EMPLOYEES NOT IN IT
 Employees in the Information Technology department had already received the update. All other employees still required it.
 
 Command used:
+
 SELECT *
 FROM employees
 WHERE department NOT LIKE '%Information Technology%';
@@ -106,6 +112,6 @@ Explanation:
 This query uses the NOT operator to exclude IT employees, ensuring updates are applied only to employees who still need them.
 
 
-STEP 9: SUMMARY
----------------
+STEP 9: FINAL SUMMARY
+--------------------
 In this activity, I used SQL filters to investigate potential security issues involving login attempts and employee machines. By filtering data based on time, date, location, and department using AND, OR, NOT, and LIKE, I identified suspicious login activity and determined which employee systems required security updates. This activity demonstrates how SQL can be used to support real-world security investigations and access control decisions.
