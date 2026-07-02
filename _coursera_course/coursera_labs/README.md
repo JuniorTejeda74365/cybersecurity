@@ -63,6 +63,18 @@ Each report reflects real-world security scenarios and applies industry-standard
 - Recommends security improvements
 
 ---
+ 
+ ### 7. Algorithm for File Updates in Python
+**Folder:** `algorithm_file_updates_python/`
+
+- Developed a Python script to automate updates to an IP address allow list
+- Reads IP addresses from a text file using file handling techniques
+- Converts file contents into a list for processing
+- Compares the allow list against a remove list using loops and conditional statements
+- Removes unauthorized IP addresses and updates the original file
+- Demonstrates Python automation for access control management
+
+---
 
 ## Skills Demonstrated
 - Incident response and analysis
