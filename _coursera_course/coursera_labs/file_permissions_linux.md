@@ -1,10 +1,10 @@
+# File Permissions in Linux
+
 ## Description
 
 This project demonstrates how Linux file and directory permissions are managed to enforce the principle of least privilege. Using Linux command-line tools, existing permissions are reviewed, unauthorized access is removed, and access controls are modified to protect sensitive research data.
-FILE PERMISSIONS IN LINUX
 
-
-PROJECT DESCRIPTION
+## Project Description
 -------------------
 In this project, I acted as a security professional responsible for managing file and directory permissions for a research team in a Linux environment. I reviewed existing permissions to identify unauthorized access and used Linux commands to enforce proper authorization. By applying the principle of least privilege, I ensured that only authorized users could access sensitive research files and directories.
 
