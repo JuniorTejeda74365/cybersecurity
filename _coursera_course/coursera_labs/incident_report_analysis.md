@@ -1,3 +1,7 @@
+## Description
+
+This project analyzes a Denial-of-Service (DoS) attack caused by an ICMP flood using the NIST Cybersecurity Framework. It documents the incident, identifies the firewall misconfiguration that enabled the attack, evaluates its impact on network availability, and recommends mitigation strategies to strengthen network security.
+
 # Incident Report Analysis
 ## Denial-of-Service (DoS) Attack – ICMP Flood
 

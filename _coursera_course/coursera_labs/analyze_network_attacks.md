@@ -1,3 +1,7 @@
+## Description
+
+This project investigates a TCP SYN flood attack using Wireshark packet captures to identify malicious network activity. The analysis explains how excessive TCP connection requests exhausted server resources, resulting in 504 Gateway Time-out errors, and recommends security controls including SYN cookies, rate limiting, firewall filtering, and intrusion detection systems (IDS/IPS).
+
 # Network Intrusion Attack Analysis
 
 ## Section One: Network Intrusion Attack Analysis

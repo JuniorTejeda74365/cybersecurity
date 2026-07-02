@@ -1,3 +1,7 @@
+## Description
+
+This project evaluates security risks following a simulated data breach affecting a social media organization. It identifies weaknesses in authentication, password management, firewall configuration, and access controls, and recommends network hardening measures including multifactor authentication, stronger password policies, and firewall maintenance.
+
 # Security Risk Assessment Report  
 ## Network Hardening Analysis – Social Media Organization
 

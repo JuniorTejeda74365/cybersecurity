@@ -1,3 +1,7 @@
+## Description
+
+This project analyzes tcpdump network traffic to investigate a DNS communication failure. By examining DNS requests, UDP traffic on port 53, and ICMP error messages, the report identifies the suspected root cause of the incident and recommends troubleshooting steps to restore DNS availability.
+
 # Cybersecurity Incident Report: Network Traffic Analysis
 
 ---

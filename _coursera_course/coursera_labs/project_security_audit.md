@@ -1,3 +1,7 @@
+## Description
+
+This project performs an internal security audit of Botium Toys to evaluate organizational assets, security controls, regulatory compliance, and overall risk. The audit identifies security weaknesses, assesses compliance with PCI DSS, GDPR, and SOC standards, and recommends improvements to strengthen the organization's security posture.
+
 # Botium Toys Internal Security Audit Report
 
 ---

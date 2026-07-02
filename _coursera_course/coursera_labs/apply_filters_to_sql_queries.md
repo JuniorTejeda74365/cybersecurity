@@ -1,3 +1,6 @@
+## Description
+
+This project investigates security events using SQL queries against employee and login databases. By applying SQL filtering techniques such as AND, OR, NOT, and LIKE, the analysis identifies suspicious login attempts, supports access investigations, and determines which employee systems require security updates.
 APPLY FILTERS TO SQL QUERIES
 ===========================
 
