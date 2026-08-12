@@ -55,6 +55,3 @@ extra_projects/
 - SQL
 - Git & GitHub
 - VS Code
-
----
-*This portfolio is continuously updated as I complete new cybersecurity labs, projects, and certifications.*
